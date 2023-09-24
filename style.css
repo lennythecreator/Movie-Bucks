@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Sedgwick+Ave&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('movie-background-collage.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container{
+    width: 420px;
+    background:transparent ;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    padding: 30px 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+}
+
+.login-container h1{
+    font-size: 36px;
+    text-align: center;
+    color: #ffff;
+}
+
+.login-container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background:none;
+    border-radius: 45px;
+    margin: 30px 0
+}
+
+.input-box input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255, 255, .2);
+    border-radius: 40px;
+    color: #ffff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color:#ffff;
+
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffff;
+    font-size: 20px;
+}
+
+.login-container .btn{
+    width: 100%;
+    height: 45px;
+    background: #ffff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: 16px;
+    color: #333;
+    font-weight:800;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.profile-card, .movie-recommendations {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 40%;
+    border-radius: 45px;
+    gap:20px;
+    flex:1;
+}
+
+.movie-recommendations {
+    display: flex;
+    width: 500px;
+    flex-direction: column; /* Stack movie recommendations on top of movie cards */
+    gap: 20px;
+}
+
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    max-width: calc(50% - 20px); /* Half the width with spacing */
+}
+
+.botui-container {
+    background-color: inherit;
+    background: #ffff;
+    width: 300px;
+    height: 50%;
+  }
+
+  .botui-messages-container {
+    background: #ffff;
+    width: 300px;
+    height: 50%;
+  }
+
+  .botui-actions-container {
+    padding: 0px 30px;
+  }
+
+  .botui-message {
+  }
+
+  .botui-message-content.text {
+    background-color: #e1fafc;
+    color: #404040;
+  }
+
+  .botui-message-content.human {
+    background-color: #f7ff61;
+    color: #404040;
+  }
+
+  .botui-message-content.embed {
+  }
+
+  .botui-message-content-link {
+  }
+
+  .botui-actions-text-input {
+  }
+
+  .botui-actions-text-submit {
+  }
+
+  button.botui-actions-buttons-button {
+    margin-top: 0px;
+  }

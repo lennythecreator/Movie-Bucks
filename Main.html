@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.min.js"></script>
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css">
+    <link rel="stylesheet" href="node_modules/botui/build/botui.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui-theme-default.css" />
+
+
+    <title>Your Web Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <h1>Profile</h1>
+            <p>Budget: $XXXX</p>
+            <p>Current funds: $XXXX</p>
+        </div>
+        <div class="movie-recommendations">
+            <h2>Movie Recommendations</h2>
+            <div class="movie-card">
+                <img src="movie1.jpg" alt="Movie 1">
+                <p>Movie Title 1</p>
+            </div>
+            <div class="movie-card">
+                <img src="movie2.jpg" alt="Movie 2">
+                <p>Movie Title 2</p>
+            </div>
+            <div class="movie-card">
+                <img src="movie3.jpg" alt="Movie 3">
+                <p>Movie Title 3</p>
+            </div>
+            <div class="movie-card">
+                <img src="movie4.jpg" alt="Movie 4">
+                <p>Movie Title 4</p>
+            </div>
+     
+       </div>
+
+        <div class="botui-app-container" id="help-bot">
+            <bot-ui></bot-ui>
+        </div>
+        <!-- use Vue version 2.0.5 for HTML embeds | https://github.com/botui/botui/issues/103-->
+        <!-- remove .min from the file name to use in development mode -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/botui@0.3.9/build/botui.min.js"></script>
+        
+        </div>  
+    
+</body>
+</html>
