@@ -111,6 +111,7 @@ p{
     font-weight: 400;
     margin-right: 20px;
     background-color: rgba(81, 78, 78, 0.2);
+    backdrop-filter: blur(20px);
 }
 .profile-card, .movie-recommendations {
     right: 10px;
@@ -126,6 +127,7 @@ p{
 
 .movie-recommendations {
     display: flex;
+    justify-content:space-around;
     backdrop-filter: blur(10px);
     background-color: rgba(0,0,0,0.4);
     width: 500px;
@@ -143,7 +145,7 @@ p{
 .movie-cards {
     display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: row;
     gap: 20px;
 }
 
@@ -161,7 +163,7 @@ p{
 
     
         
-        background-color: blue;
+        background-color: rgba(255,255, 255, .2);
         animation: floatAnimation 3s ease-in-out infinite;
     
     
