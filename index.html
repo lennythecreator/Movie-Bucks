@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>MovieCoins</title>
+</head>
+<body>
+                <div class="loader">
+                    
+                    <i class='bx bxs-movie-play bx-tada' class="Icon" id="Icon" ></i>
+                    <style>
+                        .loader {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: none;
+                        transition: opacity 4s, visibility 4s;
+                        }
+
+                        .loader--hidden {
+                        opacity: 0;
+                        visibility: hidden;
+                        }
+                        .loader i{
+                            position: absolute;
+                            font-size: 40px;
+                        }
+                        .loader::after {
+                        content: "";
+                        width: 75px;
+                        height: 75px;
+                        border: 15px solid #dddddd;
+                        border-top-color: #009578;
+                        border-radius: 50%;
+                        animation: loading 0.75s ease infinite;
+                        }
+
+            @keyframes loading {
+            from {
+                transform: rotate(0turn);
+            }
+            to {
+                transform: rotate(1turn);
+            }
+            }
+                    </style>
+                </div>
+    <div class="login-container">
+        <h1>Login</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt' ></i>
+        </div>
+        <button type="submit" class="btn">Login <i class='bx bxs-movie-play bx-tada' ></i> </button>
+        
+    </div>
+</body>
+</html>
