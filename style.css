@@ -118,6 +118,7 @@ p{
     border: 1px solid #ccc;
     padding: 20px;
     width: 500px;
+    height: 400px;
     border-radius: 45px;
     gap:20px;
     backdrop-filter: blur(5px);
@@ -130,7 +131,8 @@ p{
     justify-content:space-around;
     backdrop-filter: blur(10px);
     background-color: rgba(0,0,0,0.4);
-    width: 500px;
+    position: relative;
+    width: 700px;
     font-weight: 600;
     flex-direction: column; /* Stack movie recommendations on top of movie cards */
     gap: 20px;
@@ -138,14 +140,20 @@ p{
 }
 .movie-recommendations h2{
     font-weight: 700;
-    text-align: center;
+    
     color: #f5f6fa;
+    top: 50px;
+    right: 150px;
+    position: absolute;
 }
 
 .movie-cards {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns with equal width */
+    grid-gap: 10px;
     gap: 20px;
 }
 
@@ -154,11 +162,12 @@ p{
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    justify-content:baseline;
     /*max-width: calc(60% - 20px); /* Half the width with spacing */
     border-radius: 25px;
     
-    height: 400px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     
 
     
@@ -168,6 +177,11 @@ p{
     
     
 }
+.movie-cards{
+    display: grid;
+    grid-row: auto;
+}
+
 @keyframes floatAnimation {
     0% {
         transform: translateY(0);
