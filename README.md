@@ -18,7 +18,7 @@ MovieBot is a web application designed to help you manage your budget, get perso
 - **Movie Recommendations:** Discover exciting movie options based on your preferences.
 - **ChatBot Interface:** Interact with the ChatBot to get answers to your queries.
   
-##Tools Used
+## Tools Used
 - Html
 - CSS
 - Javascript
