@@ -1,4 +1,4 @@
-# MovieBot
+# MovieBucks
 
 Welcome to MovieBot! This project combines a budget tracker with movie recommendations and a ChatBot interface for an engaging user experience.
 
@@ -17,6 +17,11 @@ MovieBot is a web application designed to help you manage your budget, get perso
 - **Profile Card:** Keep track of your budget and current funds.
 - **Movie Recommendations:** Discover exciting movie options based on your preferences.
 - **ChatBot Interface:** Interact with the ChatBot to get answers to your queries.
+  
+#Tools Used
+- Html
+- CSS
+- Javascript
 
 ## Setup
 1. Clone the repository: `git clone https://github.com/yourusername/MovieBot.git`
